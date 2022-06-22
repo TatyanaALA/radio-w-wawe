@@ -1,12 +1,775 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Радио W-Wawe</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="lib/accordion.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__top flex">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__img" src="img/logo.svg" alt="логотип W-Wawe">
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list list-resert flex">
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Подкасты
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Передачи
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Гости
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Плейлисты
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="search__btn btn-resert" aria-label="Найти">
+          <a href="" class="search__link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </button>
+        <button class="enter__btn btn-resert">
+          Вход
+        </button>
+      </div>
+      <div class="header__bottom flex">
+        <ul class="header__bottom-list list-resert flex">
+          <li class="header__bottom-item">
+            <a href="#" class="header__bottom-link">
+              Новости
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="header__bottom-link">
+              Блоги
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="header__bottom-link">
+              Топы
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="header__bottom-link">
+              Опросы
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="header__bottom-link">
+              Рейтинги
+            </a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#" class="header__bottom-link">
+              Реклама
+            </a>
+          </li>
+        </ul>
+        <button class="header__bottom-btn btn-resert">
+          <span>
+            Ранее в эфире
+          </span>
+          «Музыка»
+        </button>
+        <button class="header__bottom-btn btn-resert">
+          <span>
+            Сейчас в эфире
+          </span>
+          «Как так?»
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__header">
+          Радио W-Wawe
+        </h1>
+        <p class="hero__descr">
+          Привет, на связи W-Wawe! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое :) 
+        </p>
+        <button class="hero__btn btn-resert">
+          Слушать эфир
+        </button>
+      </div>
+    </section>
+    <section class="podcasts">
+      <div class="container">
+        <h2 class="podcasts__header">
+          Подкасты
+        </h2>
+        <ul class="podcasts__list list-resert">
+          <li class="podcasts__item">
+            <article class="podcasts__item-article flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/podcast-1_320.jpg">
+                <img src="img/podcast-1.jpg" alt="этикет">
+              </picture>
+              <div class="article__content">
+                <time>
+                  15:43
+                </time>
+                <h3 class="article__title">
+                  Европа. XIX век
+                </h3>
+                <p class="article__descr">
+                  Дмитрий Гутенберг
+                </p>
+              </div>
+              <button class="article__btn btn-resert">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </article>
+            <ul class="statistics__list list-resert flex">
+              <li class="statistics__item-play">
+                258
+              </li>
+              <li class="statistics__item-like">
+                104
+              </li>
+              <li class="statistics__item-share">
+                68
+              </li>
+            </ul>
+          </li>
+          <li class="podcasts__item">
+            <article class="podcasts__item-article flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/podcast-2_320.jpg">
+                <img src="img/podcast-2.jpg" alt="этикет">
+              </picture>
+              <div class="article__content">
+                <time>
+                  5:32
+                </time>
+                <h3 class="article__title">
+                  О музыке
+                </h3>
+                <p class="article__descr">
+                  Дмитрий Гутенберг
+                </p>
+              </div>
+              <button class="article__btn btn-resert">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </article>
+            <ul class="statistics__list list-resert flex">
+              <li class="statistics__item-play">
+                207
+              </li>
+              <li class="statistics__item-like">
+                34
+              </li>
+              <li class="statistics__item-share">
+                18
+              </li>
+            </ul>
+          </li>
+          <li class="podcasts__item">
+            <article class="podcasts__item-article flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/podcast-3_320.jpg">
+                <img src="img/podcast-3.jpg" alt="этикет">
+              </picture>
+              <div class="article__content">
+                <time>
+                  8:54
+                </time>
+                <h3 class="article__title">
+                  Люди сегодня
+                </h3>
+                <p class="article__descr">
+                  Анна Васильева
+                </p>
+              </div>
+              <button class="article__btn btn-resert">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </article>
+            <ul class="statistics__list list-resert flex">
+              <li class="statistics__item-play">
+                104
+              </li>
+              <li class="statistics__item-like">
+                54
+              </li>
+              <li class="statistics__item-share">
+                42
+              </li>
+            </ul>
+          </li>
+          <li class="podcasts__item">
+            <article class="podcasts__item-article flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/podcast-4_320.jpg">
+                <img src="img/podcast-4.jpg" alt="этикет">
+              </picture>
+              <div class="article__content">
+                <time>
+                  9:04
+                </time>
+                <h3 class="article__title">
+                  Хэллоу, Африка!
+                </h3>
+                <p class="article__descr">
+                  Пётр Дмитриевский
+                </p>
+              </div>
+              <button class="article__btn btn-resert">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </article>
+            <ul class="statistics__list list-resert flex">
+              <li class="statistics__item-play">
+                87
+              </li>
+              <li class="statistics__item-like">
+                44
+              </li>
+              <li class="statistics__item-share">
+                5
+              </li>
+            </ul>
+          </li>
+          <li class="podcasts__item">
+            <article class="podcasts__item-article flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/podcast-1_320.jpg">
+                <img src="img/podcast-5.jpg" alt="этикет">
+              </picture>
+              <div class="article__content">
+                <time>
+                  7:03
+                </time>
+                <h3 class="article__title">
+                  Обо всём
+                </h3>
+                <p class="article__descr">
+                  Пётр Дмитриевский
+                </p>
+              </div>
+              <button class="article__btn btn-resert">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </article>
+            <ul class="statistics__list list-resert flex">
+              <li class="statistics__item-play">
+                64
+              </li>
+              <li class="statistics__item-like">
+                30
+              </li>
+              <li class="statistics__item-share">
+                8
+              </li>
+            </ul>
+          </li>
+          <li class="podcasts__item">
+            <article class="podcasts__item-article flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/podcast-2_320.jpg">
+                <img src="img/podcast-6.jpg" alt="этикет">
+              </picture>
+              <div class="article__content">
+                <time>
+                  9:15
+                </time>
+                <h3 class="article__title">
+                  Физика цвета
+                </h3>
+                <p class="article__descr">
+                  Татьяна Флеганова
+                </p>
+              </div>
+              <button class="article__btn btn-resert">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </article>
+            <ul class="statistics__list list-resert flex">
+              <li class="statistics__item-play">
+                58
+              </li>
+              <li class="statistics__item-like">
+                29
+              </li>
+              <li class="statistics__item-share">
+                14
+              </li>
+            </ul>
+          </li>
+          <li class="podcasts__item">
+            <article class="podcasts__item-article flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/podcast-3_320.jpg">
+                <img src="img/podcast-7.jpg" alt="этикет">
+              </picture>
+              <div class="article__content">
+                <time>
+                  16:04
+                </time>
+                <h3 class="article__title">
+                  Источник звука
+                </h3>
+                <p class="article__descr">
+                  Пётр Дмитриевский
+                </p>
+              </div>
+              <button class="article__btn btn-resert">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </article>
+            <ul class="statistics__list list-resert flex">
+              <li class="statistics__item-play">
+                55
+              </li>
+              <li class="statistics__item-like">
+                20
+              </li>
+              <li class="statistics__item-share">
+                12
+              </li>
+            </ul>
+          </li>
+          <li class="podcasts__item">
+            <article class="podcasts__item-article flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/podcast-4_320.jpg">
+                <img src="img/podcast-8.jpg" alt="этикет">
+              </picture>
+              <div class="article__content">
+                <time>
+                  6:55
+                </time>
+                <h3 class="article__title">
+                  Правила этикета
+                </h3>
+                <p class="article__descr">
+                  Татьяна Флеганова
+                </p>
+              </div>
+              <button class="article__btn btn-resert">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
+                </svg>
+              </button>
+            </article>
+            <ul class="statistics__list list-resert flex">
+              <li class="statistics__item-play">
+                24
+              </li>
+              <li class="statistics__item-like">
+                25
+              </li>
+              <li class="statistics__item-share">
+                42
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="podcasts__btn btn-resert">
+          Ещё подкасты
+        </button>
+      </div>
+    </section>
+    <section class="broadcast">
+      <div class="container">
+        <div class="broadcast__rihgt">
+          <div class="broadcast__rihgt-top">
+            <h2 class="broadcast__titel">
+              Передачи
+            </h2>
+            <p class="broadcast__top-descr">
+              Автор:
+            </p>
+            <div class="select-container">
+              <select name="" id="choices" class="choices">
+                <option value="">Дмитрий Гутенберг</option>
+                <option>Татьяна Флеганова</option>
+                <option>Анна Васильева</option>
+                <option>Пётр Дмитриевский</option>
+              </select>
+            </div>
+          </div>
+          <div class="broadcast__rihgt-bottom">
+            <button class="broadcast__btn btn-resert">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.5 12.75L9 16.5L16.5 12.75" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.5 9L9 12.75L16.5 9" stroke="#121723" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Архив 
+            </button>
+            <p class="broadcast__bottom-descr">
+              В архив попадают все передачи, которые вы пропустили! Enjoy :)
+            </p>
+          </div>
+        </div>
+        <div class="broadcast__left">
+          <ul class="broadcast__list list-resert">
+            <li class="broadcast__item flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/broadcast-1_320.jpg">
+                <img src="img/broadcast-1.jpg" alt="Люди и книги">
+              </picture>
+              <h3 class="broadcast__item-title">
+                О людях и книгах
+              </h3>
+              <span class="broadcasts__item-time">
+                Анонсируется отдельно
+              </span>
+              <a href="#" class="broadcasts__item-link">
+                Подробнее
+              </a>
+            </li>
+            <li class="broadcast__item flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/broadcast-2_320.jpg">
+                <img src="img/broadcast-2.jpg" alt="графомания">
+              </picture>
+              <h3 class="broadcast__item-title">
+                Графомания td
+              </h3>
+              <span class="broadcasts__item-time">
+                По понедельникам в 10:00
+              </span>
+              <a href="#" class="broadcasts__item-link">
+                Подробнее
+              </a>
+            </li>
+            <li class="broadcast__item flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/broadcast-3_320.jpg">
+                <img src="img/broadcast-3.jpg" alt="не Рим, не Троя">
+              </picture>
+              <h3 class="broadcast__item-title">
+                Не Рим, не Троя
+              </h3>
+              <span class="broadcasts__item-time">
+                По вторникам в 12:00
+              </span>
+              <a href="#" class="broadcasts__item-link">
+                Подробнее
+              </a>
+            </li>
+            <li class="broadcast__item flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/broadcast-4_320.jpg">
+                <img src="img/broadcast-4.jpg" alt="эрудит">
+              </picture>
+              <h3 class="broadcast__item-title">
+                Эрудит
+              </h3>
+              <span class="broadcasts__item-time">
+                По пятницам в 17:00
+              </span>
+              <a href="#" class="broadcasts__item-link">
+                Подробнее
+              </a>
+            </li>
+            <li class="broadcast__item flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/broadcast-5_320.jpg">
+                <img src="img/broadcast-5.jpg" alt="тонкости эпох">
+              </picture>
+              <h3 class="broadcast__item-title">
+                Тонкости эпох
+              </h3>
+              <span class="broadcasts__item-time">
+                По субботам в 10:00
+              </span>
+              <a href="#" class="broadcasts__item-link">
+                Подробнее
+              </a>
+            </li>
+            <li class="broadcast__item flex">
+              <picture>
+                <source media="(max-width:320px)" srcset="img/broadcast-6_320.jpg">
+                <img src="img/broadcast-6.jpg" alt="мысли">
+              </picture>
+              <h3 class="broadcast__item-title">
+                Живые мысли
+              </h3>
+              <span class="broadcasts__item-time">
+                По воскресеньям в 15:30
+              </span>
+              <a href="#" class="broadcasts__item-link">
+                Подробнее
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="guests">
+      <div class="container">
+        <h2 class="guests__titel">
+          Гости
+        </h2>
+        <span>
+          У нас бывают:
+        </span>
+        <p class="guests__descr">
+          Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много других интересных гостей!
+        </p>
+        <ul class="guests__list list-resert accordion-container">
+          <li class="guests__item">
+            <button class="guests__btn btn-resert flex">
+              <span class="guests__btn__text">
+                Блогеры
+              </span>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </button>
+            <div class="guests__content">
+              <ul class="content__list list-resert flex">
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Сергей Денисов</a>
+                  <a href="#" class="content__link">Матвей Мечников</a>
+                  <a href="#" class="content__link">Константин Прусино</a>
+                  <a href="#" class="content__link">Иван Калитников</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Евгений Войновский</a>
+                  <a href="#" class="content__link">Ольга Мартынова</a>
+                  <a href="#" class="content__link">Дмитрий Михалок</a>
+                  <a href="#" class="content__link">Пётр Пиотровский</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Олег Свиридовский</a>
+                  <a href="#" class="content__link">Владислав Кауперс</a>
+                  <a href="#" class="content__link">Михаил Пожитников</a>
+                  <a href="#" class="content__link">Георгий Полуян</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Денис Тельман</a>
+                  <a href="#" class="content__link">Юрий Горин</a>
+                  <a href="#" class="content__link">Максим Сергеев</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="guests__item">
+            <button class="guests__btn btn-resert flex">
+              <span class="guests__btn__text">
+                Арт-критики
+              </span>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </button>
+            <div class="guests__content">
+              <ul class="content__list list-resert flex">
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Антон Белов</a>
+                  <a href="#" class="content__link">Тереза Мавика</a>
+                  <a href="#" class="content__link">Дарья Жукова</a>
+                  <a href="#" class="content__link">Мария Лошак</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Алиса Прудникова</a>
+                  <a href="#" class="content__link">Леонид Михельсон</a>
+                  <a href="#" class="content__link">Василий Церетели</a>
+                  <a href="#" class="content__link">Ольга Свиблова</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Владимир Овчаренко</a>
+                  <a href="#" class="content__link">Андрей Ерофеев</a>
+                  <a href="#" class="content__link">Эмилия Кабакова</a>
+                  <a href="#" class="content__link">Григорий Ревзин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="guests__item">
+            <button class="guests__btn btn-resert flex">
+              <span class="guests__btn__text">
+                Художники
+              </span>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </button>
+            <div class="guests__content">
+              <ul class="content__list list-resert flex">
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Юрий Альберт</a>
+                  <a href="#" class="content__link">Александр Бродский</a>
+                  <a href="#" class="content__link">Андрей Монастырский</a>
+                  <a href="#" class="content__link">Николай Полисский</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Ирина Корина</a>
+                  <a href="#" class="content__link">Вадим Захаров</a>
+                  <a href="#" class="content__link">Арсений Жиляев</a>
+                  <a href="#" class="content__link">Дмитрий Гутов</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Анна Желудь</a>
+                  <a href="#" class="content__link">Кирилл Кто</a>
+                  <a href="#" class="content__link">Анатолий Осмоловский</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="guests__item">
+            <button class="guests__btn btn-resert flex">
+              <span class="guests__btn__text">
+                Люди науки
+              </span>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </button>
+            <div class="guests__content">
+              <ul class="content__list list-resert flex">
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Григорий Перельман </a>
+                  <a href="#" class="content__link">Жорес Алферов</a>
+                  <a href="#" class="content__link">Михаил Гельфанд</a>
+                  <a href="#" class="content__link">Юрий Оганесян</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Андрей Гейм</a>
+                  <a href="#" class="content__link">Константин Новоселов</a>
+                  <a href="#" class="content__link">Валерий Рубаков</a>
+                  <a href="#" class="content__link">Алексей Старобинский</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Рашид Сюняев</a>
+                  <a href="#" class="content__link">Александр Марков</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="guests__item">
+            <button class="guests__btn btn-resert flex">
+              <span class="guests__btn__text">
+                Историки
+              </span>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </button>
+            <div class="guests__content">
+              <ul class="content__list list-resert flex">
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Юрий Бубнов</a>
+                  <a href="#" class="content__link">Тамара Эйдельман</a>
+                  <a href="#" class="content__link">Борис Акунин</a>
+                  <a href="#" class="content__link">Петр Алешковский</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Кирилл Александров</a>
+                  <a href="#" class="content__link">Елена Борисёнок </a>
+                  <a href="#" class="content__link">Юрий Жуков</a>
+                  <a href="#" class="content__link">Фёдор Гайда</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Александр Шубин</a>
+                  <a href="#" class="content__link">Татьяна Таирова-Яковлева</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="guests__item">
+            <button class="guests__btn btn-resert flex">
+              <span class="guests__btn__text">
+                Филологи
+              </span>
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2"/>
+                <path d="M13 24L21 16L29 24" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </button>
+            <div class="guests__content">
+              <ul class="content__list list-resert flex">
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Аполинария Аврутина</a>
+                  <a href="#" class="content__link">Светлана Адоньева</a>
+                  <a href="#" class="content__link">Наталия Азорова</a>
+                  <a href="#" class="content__link">Федор Двинятин</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Дмитрий Казанцев</a>
+                  <a href="#" class="content__link">Татьяна Калинина</a>
+                  <a href="#" class="content__link">Оксана Иссерс</a>
+                  <a href="#" class="content__link">Евгений Игушев</a>
+                </li>
+                <li class="content__item flex">
+                  <a href="#" class="content__link">Леониы Крысин</a>
+                  <a href="#" class="content__link">Елена Ремчукова</a>
+                  <a href="#" class="content__link">Анатолий Баранов</a>
+                  <a href="#" class="content__link">Владимир Колесов</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          </ul>
+      </div>
+    </section>
+    <section class="playlist">
+      
+    </section>
+  </main>
+  <script src="lib/accordion.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
